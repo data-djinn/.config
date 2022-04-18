@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nix/hardware-configuration.nix
     ];
 
   # Use the GRUB 2 boot loader.
