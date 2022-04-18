@@ -95,6 +95,7 @@
      extraGroups = [
        "wheel"
        "docker"
+       "sudo"
      ]; # Enable ‘sudo’ for the user.
    };
 
@@ -135,6 +136,8 @@
      terraform
      aws
      gh	    
+     zenith
+     neofetch
      ((vim_configurable.override { python = python3; }).customize{
          name = "vim";
          vimrcConfig.packages.myplugins = with pkgs.vimPlugins; {
